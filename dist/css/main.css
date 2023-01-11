@@ -44,8 +44,11 @@
 .header__item {
   display: none;
 }
-.header__item:nth-child(1) {
-  display: block;
+.header__item-show {
+  display: block !important;
+}
+.header__item-fade {
+  animation: fade 1s ease;
 }
 .header__item-block {
   width: 65%;
@@ -116,5 +119,14 @@
 .header__slider-dot:hover {
   cursor: pointer;
   background: rgba(209, 209, 209, 0.65);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
