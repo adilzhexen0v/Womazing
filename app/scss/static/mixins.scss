@@ -1,0 +1,14 @@
+@import "variables";
+
+@mixin flex($jc: space-between, $ai: center){
+     display: flex;
+     justify-content: $jc;
+     align-items: $ai;
+}
+
+@mixin text($size: 15px, $lineHeight: 140%, $weight: 400, $color: $black) {
+     font-size: $size;
+     line-height: $lineHeight;
+     font-weight: $weight;
+     color: $color;
+}
