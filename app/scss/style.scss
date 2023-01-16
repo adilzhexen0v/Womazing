@@ -19,7 +19,7 @@
           @include flex();
      }
      .phone{
-          @include text();
+          @include text(18px, 24px, 400, $black);
           i {
                transform: rotate(45deg) scale(-1, 1);
                color: $blue;
@@ -29,7 +29,7 @@
      &__part{
           &:nth-child(2) {
                @include flex(center, center);
-               gap: 45px;
+               gap: 50px;
           }
           &:nth-child(3) {
                @include flex(flex-end, center);
@@ -37,7 +37,7 @@
           }
      }
      &__link{
-          @include text();
+          @include text(18px, 24px, 400, $black);
           letter-spacing: 0.02em;
           transition: 0.3s ease;
           &:hover{
@@ -48,6 +48,9 @@
 
 section{
      padding-top: 150px;
+     &:last-child{
+          padding-bottom: 150px;
+     }
 }
 
 .section{

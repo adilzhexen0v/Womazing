@@ -179,3 +179,108 @@
           }
      }
 }
+
+.important{
+     &__list{
+          @include flex(space-between, flex-start);
+          gap: 90px;
+     }
+     &__item{
+          @include flex(flex-start, flex-start);
+          flex-direction: column;
+          &-img{
+               width: 80px;
+               margin-bottom: 36px;
+          }
+          &-title{
+               @include text(25px, 35px, 500, $black);
+               margin-bottom: 24px;
+          }
+          &-text{
+               @include text(17px, 24px, 500, $black);
+          }
+     }
+}
+
+.team{
+     &__list{
+          @include flex();
+     }
+     &__part{
+          &:first-child{
+               width: 65%;
+          }
+          &:last-child{
+               width: 25%;
+          }
+          &-title{
+               @include text(25px, 35px, 500, $black);
+               margin-bottom: 28px;
+          }
+          &-text{
+               @include text(17px, 24px, 500, $black);
+               margin-bottom: 28px;
+          }
+          &-link{
+               @include text(17px, 24px, 500, $blue);
+               &:hover{
+                    text-decoration: underline;
+               }
+          }
+     }
+     &__slider{
+          position: relative;
+          
+          &-wrapper{
+               position: relative;
+               overflow: hidden;
+               width: 100%;
+               height: 100%;
+          }
+          &-container{
+               display: flex;
+               width: 300%;
+               height: 100%;
+               transition: 0.6s ease;
+          }
+          &-item{
+               width: calc(100%/3);
+               height: 100%;
+               img{
+                    width: 100%;
+                    height: 100%;
+               }
+          }
+          &-arrow{
+               position: absolute;
+               top: calc(50% - 12px);
+               width: 48px;
+               &-left{
+                    left: -72px;
+               }
+               &-right{
+                    right: -72px;
+               }
+          }
+          &-dots{
+               position: absolute;
+               bottom: 20px;
+               left: calc(50% - 58px);
+               @include flex(center, center);
+               gap: 8px;
+               .active{
+                    background: white;
+               }
+          }
+          &-dot{
+               width: 30px;
+               height: 4px;
+               background: rgba(white, 0.6);
+               transition: 0.2s ease;
+               &:hover{
+                    cursor: pointer;
+                    background: rgba(white, 0.85);
+               }
+          }
+     }
+}

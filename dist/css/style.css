@@ -18,8 +18,8 @@
   align-items: center;
 }
 .nav .phone {
-  font-size: 15px;
-  line-height: 140%;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   color: #000;
 }
@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 45px;
+  gap: 50px;
 }
 .nav__part:nth-child(3) {
   display: flex;
@@ -41,8 +41,8 @@
   gap: 60px;
 }
 .nav__link {
-  font-size: 15px;
-  line-height: 140%;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   color: #000;
   letter-spacing: 0.02em;
@@ -54,6 +54,9 @@
 
 section {
   padding-top: 150px;
+}
+section:last-child {
+  padding-bottom: 150px;
 }
 
 .section__title {
