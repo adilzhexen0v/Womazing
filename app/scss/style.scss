@@ -45,3 +45,28 @@
           }
      }
 }
+
+section{
+     padding-top: 150px;
+}
+
+.section{
+     &__title{
+          @include text(40px, 110%, 500, $black);
+          padding-bottom: 100px;
+     }
+     &__btn{
+          margin-top: 80px;
+          padding: 22px 50px;
+          border: 1px solid $blue;
+          @include text(17px, 140%, 400, $blue);
+          transition: 0.3s ease;
+          &:hover{
+               background: $blue;
+               color: white;
+          }
+          &-block{
+               @include flex(center, center);
+          }
+     }
+}
