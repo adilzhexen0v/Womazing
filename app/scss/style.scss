@@ -73,3 +73,57 @@ section{
           }
      }
 }
+
+.footer{
+     padding: 100px 0;
+     background: $beige;
+     &__list{
+          @include flex(space-between, flex-start);
+     }
+     &__part{
+          &:nth-child(1){
+               @include flex(flex-start, flex-start);
+               flex-direction: column;
+               .footer__text{
+                    margin-bottom: 6px;
+               }
+          }
+          &:nth-child(2){
+               @include flex(flex-start, center);
+               gap: 45px;
+          }
+          &:nth-child(3){
+               @include flex(flex-start, flex-end);
+               flex-direction: column;
+          }
+     }
+     &__text{
+          @include text(17px, 24px, 400, $black);
+     }
+     &__link{
+          @include text(17px, 24px, 400, $black);
+          letter-spacing: 0.02em;
+          transition: 0.3s ease;
+          &:hover{
+               color: $blue;
+          }
+          i{
+               font-size: 22px;
+          }
+     }
+     &__phone{
+          margin-bottom: 10px;
+     }
+     &__logo{
+          margin-bottom: 70px;
+     }
+     &__links{
+          margin-top: 30px;
+          @include flex(flex-end, center);
+          gap: 12px;
+     }
+     &__cards{
+          margin-top: 30px;
+          width: 70px;
+     }
+}

@@ -85,4 +85,72 @@ section:last-child {
   justify-content: center;
   align-items: center;
 }
+
+.footer {
+  padding: 100px 0;
+  background: #F1EADC;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__part:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer__part:nth-child(1) .footer__text {
+  margin-bottom: 6px;
+}
+.footer__part:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 45px;
+}
+.footer__part:nth-child(3) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.footer__text {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.footer__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.02em;
+  transition: 0.3s ease;
+}
+.footer__link:hover {
+  color: #6E9C9F;
+}
+.footer__link i {
+  font-size: 22px;
+}
+.footer__phone {
+  margin-bottom: 10px;
+}
+.footer__logo {
+  margin-bottom: 70px;
+}
+.footer__links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+.footer__cards {
+  margin-top: 30px;
+  width: 70px;
+}
 /*# sourceMappingURL=style.css.map */
