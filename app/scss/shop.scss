@@ -3,10 +3,6 @@
 
 .collection{
      padding-top: 100px;
-     &__list{
-          display: grid !important;
-          grid-template-columns: repeat(3, 1fr);
-     }
      &__buttons{
           @include flex(flex-start, center);
           gap: 12px;

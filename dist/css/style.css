@@ -189,6 +189,11 @@ section:last-child {
   align-items: flex-start;
   gap: 40px;
 }
+.collection__grid {
+  display: grid !important;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
 .collection__item {
   display: flex;
   align-items: center;

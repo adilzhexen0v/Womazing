@@ -1,10 +1,6 @@
 .collection {
   padding-top: 100px;
 }
-.collection__list {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr);
-}
 .collection__buttons {
   display: flex;
   justify-content: flex-start;

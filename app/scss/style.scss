@@ -158,6 +158,11 @@ section{
           @include flex(space-between, flex-start);
           gap: 40px;
      }
+     &__grid{
+          display: grid !important;
+          grid-gap: 40px;
+          grid-template-columns: repeat(3, 1fr);
+     }
      &__item{
           display: flex;
           align-items: center;

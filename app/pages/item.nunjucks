@@ -1,46 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://use.fontawesome.com/ab2012437d.js"></script>
-     <link rel="stylesheet" href="./css/style.css">
-     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-     
+{% extends 'layout.nunjucks' %}
+
+{% block head %}
      <link rel="stylesheet" href="./css/item.css">
      <title>Свитшот Sweet Shot - Womazing</title>
+{% endblock %}
 
-</head>
-<body>
-     <header class="header">
-          <nav class="nav">
-               <div class="container">
-                    <div class="nav__part">
-                         <a href="./index.html">
-                              <img src="./img/logo.png" alt="logo">
-                         </a>
-                    </div>
-                    <div class="nav__part">
-                         <a href="./index.html" class="nav__link">Главная</a>
-                         <a href="#!" class="nav__link">Магазин</a>
-                         <a href="#!" class="nav__link">О бренде</a>
-                         <a href="#!" class="nav__link">Контакты</a>
-                    </div>
-                    <div class="nav__part">
-                         <div class="phone">
-                              <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                              +7 (495) 823-54-12
-                         </div>
-                         <div class="cart">
-                              <img src="./img/cart.png" alt="cart">
-                         </div>
-                    </div>
-               </div>
-          </nav>
-     </header>
-     
-     
+{% block content %}
      <main>
           <div class="container">
                <div class="page__title">Свитшот Sweet Shot</div>
@@ -117,41 +82,4 @@
                </div>
           </section>
      </main>
-
-
-     <footer class="footer">
-          <div class="container">
-               <div class="footer__list">
-                    <div class="footer__part">
-                         <img src="./img/logo.png" alt="footer__logo" class="footer__logo">
-                         <div class="footer__text">&copy; Все права защищены</div>
-                         <a href="#!" target="_blank" class="footer__text footer__link">Политика конфиденциальности</a>
-                         <a href="#!" target="_blank" class="footer__text footer__link">Публичная оферта</a>
-                    </div>
-                    <div class="footer__part">
-                         <a href="#!" class="footer__link">Главная</a>
-                         <a href="#!" class="footer__link">Магазин</a>
-                         <a href="#!" class="footer__link">О бренде</a>
-                         <a href="#!" class="footer__link">Контакты</a>
-                    </div>
-                    <div class="footer__part">
-                         <div class="footer__text footer__phone">+7 (495) 823-54-12</div>
-                         <a href="#!" target="_blank" class="footer__text footer__link">hello@womazing.com</a>
-                         <div class="footer__links">
-                              <a href="https://www.instagram.com/" target="_blank" class="footer__link">
-                                   <i class="fa fa-instagram" aria-hidden="true"></i>
-                              </a>
-                              <a href="https://www.instagram.com/" target="_blank" class="footer__link">
-                                   <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                              </a>
-                              <a href="https://www.instagram.com/" target="_blank" class="footer__link">
-                                   <i class="fa fa-twitter" aria-hidden="true"></i>
-                              </a>
-                         </div>
-                         <img src="./img/visa_mastercard.png" alt="visa_mastercard" class="footer__cards">
-                    </div>
-               </div>
-          </div>
-     </footer>
-</body>
-</html>
+{% endblock %}

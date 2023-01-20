@@ -4,7 +4,7 @@
 .item{
      &__list{
           @include flex(flex-start, center);
-          gap: 60px;
+          gap: 100px;
      }
      &__part{
           &:first-child{
@@ -16,5 +16,102 @@
      }
      &__img{
           width: 100%;
+     }
+     &__price{
+          @include text(40px, 44px, 500, $darkGray);
+          margin-bottom: 60px;
+          s{
+               margin-left: 30px;
+               @include text(30px, 33px, 500, $darkenGray);
+          }
+     }
+     &__choose{
+          @include text(20px, 140%, 500, $black);
+          margin-bottom: 32px;
+     }
+     &__size{
+          &-list{
+               @include flex(flex-start, center);
+               gap: 16px;
+               margin-bottom: 60px;
+          }
+          &-item{
+               width: 44px;
+               height: 44px;
+               border: 1px solid $black;
+               @include text(17px, 24px, 500, $black);
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               transition: 0.3s ease;
+               &:hover{
+                    background: $black;
+                    color: white;
+                    cursor: pointer;
+               }
+          }
+     }
+     &__colors{
+          &-list{
+               @include flex(flex-start, center);
+               gap: 16px;
+               margin-bottom: 60px;
+               .brown{
+                    background: $brown;
+               }
+               .gray{
+                    background: $gray;
+               }
+               .pink{
+                    background: $pink;
+               }
+               .orange{
+                    background: $orange;
+               }
+          }
+          &-item{
+               width: 40px;
+               height: 40px;
+               border-radius: 100%;
+               transition: 0.3s ease;
+               &:hover{
+                    opacity: 0.75;
+                    cursor: pointer;
+               }
+          }
+     }
+     &__cart{
+          &-list{
+               @include flex(flex-start, center);
+               gap: 12px;
+          }
+          &-input{
+               height: 70px;
+               width: 70px;
+               border: 1px solid $blue;
+               @include text(20px, 28px, 400, $black);
+               text-align: center;
+          }
+          &-btn{
+               padding: 22px 50px;
+               border: 1px solid $blue;
+               background-color: $blue !important;
+               @include text(17px, 24px, 400, white);
+               transition: 0.3s ease;
+               &:hover{
+                    background-color: #fff !important; 
+                    color: $blue;
+               }
+          }
+     }
+}
+
+.active{
+     &-color{
+          border: 1.5px solid $black;
+     }
+     &-size{
+          background: $black;
+          color: white;
      }
 }

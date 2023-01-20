@@ -24,7 +24,7 @@
                     <div class="collection__button">Кардиганы</div>
                     <div class="collection__button">Толстовки</div>
                </div>
-               <div class="collection__list">
+               <div class="collection__grid">
                     <div class="collection__item">
                          <a href="#!" class="collection__item-img">
                               <img src="./img/home_collection/tshirt_usa.png" alt="tshirt_usa">

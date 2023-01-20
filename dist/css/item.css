@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
 }
 .item__part:first-child {
   width: 40%;
@@ -12,5 +12,118 @@
 }
 .item__img {
   width: 100%;
+}
+.item__price {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 500;
+  color: #998E78;
+  margin-bottom: 60px;
+}
+.item__price s {
+  margin-left: 30px;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 500;
+  color: #9c9c9c;
+}
+.item__choose {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 32px;
+}
+.item__size-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+.item__size-item {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #000;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+.item__size-item:hover {
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+.item__colors-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+.item__colors-list .brown {
+  background: #927876;
+}
+.item__colors-list .gray {
+  background: #d1d1d1;
+}
+.item__colors-list .pink {
+  background: #FD9696;
+}
+.item__colors-list .orange {
+  background: #FDC796;
+}
+.item__colors-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  transition: 0.3s ease;
+}
+.item__colors-item:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.item__cart-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.item__cart-input {
+  height: 70px;
+  width: 70px;
+  border: 1px solid #6E9C9F;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+.item__cart-btn {
+  padding: 22px 50px;
+  border: 1px solid #6E9C9F;
+  background-color: #6E9C9F !important;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  transition: 0.3s ease;
+}
+.item__cart-btn:hover {
+  background-color: #fff !important;
+  color: #6E9C9F;
+}
+
+.active-color {
+  border: 1.5px solid #000;
+}
+.active-size {
+  background: #000;
+  color: white;
 }
 /*# sourceMappingURL=item.css.map */
