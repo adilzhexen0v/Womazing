@@ -53,6 +53,31 @@ section{
      }
 }
 
+.page{
+     &__title{
+          margin-top: 40px;
+          @include text(55px, 60px, 500, $black);
+          margin-bottom: 26px;
+     }
+     &__link{
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          @include text(17px, 24px, 500, $gray);
+          a{
+               color: $black;
+               &:hover{
+                    text-decoration: underline;   
+               }
+          }
+          &-line{
+               background: $black;
+               width: 16px;
+               height: 1px;
+          }
+     }
+}
+
 .section{
      &__title{
           @include text(40px, 110%, 500, $black);
@@ -125,5 +150,51 @@ section{
      &__cards{
           margin-top: 30px;
           width: 70px;
+     }
+}
+
+.collection{
+     &__list{
+          @include flex(space-between, flex-start);
+          gap: 40px;
+     }
+     &__item{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          &-title{
+               @include text(20px, 28px, 500, $black);
+               margin-top: 24px;
+          }
+          &-price{
+               @include text(16px, 140%, 500, $darkGray);
+               margin-top: 8px;
+               s{
+                    margin-right: 12px;
+               }
+          }
+          &-img{
+               position: relative;
+               &:hover{
+                    .collection__item-img-overlay{
+                         opacity: 1;
+                         cursor: pointer;
+                    }
+               }
+               &-overlay{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    @include flex(center, center);
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    background: rgba($blue, 0.65);
+                    transition: 0.4s ease;
+                    img{
+                         width: 40px;
+                    }
+               }
+          }
      }
 }

@@ -1,0 +1,20 @@
+@import "static/variables";
+@import "static/mixins";
+
+.item{
+     &__list{
+          @include flex(flex-start, center);
+          gap: 60px;
+     }
+     &__part{
+          &:first-child{
+               width: 40%;
+          }
+          &:last-child{
+               width: 60%;
+          }
+     }
+     &__img{
+          width: 100%;
+     }
+}

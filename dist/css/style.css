@@ -59,6 +59,35 @@ section:last-child {
   padding-bottom: 150px;
 }
 
+.page__title {
+  margin-top: 40px;
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 26px;
+}
+.page__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #d1d1d1;
+}
+.page__link a {
+  color: #000;
+}
+.page__link a:hover {
+  text-decoration: underline;
+}
+.page__link-line {
+  background: #000;
+  width: 16px;
+  height: 1px;
+}
+
 .section__title {
   font-size: 40px;
   line-height: 110%;
@@ -152,5 +181,57 @@ section:last-child {
 .footer__cards {
   margin-top: 30px;
   width: 70px;
+}
+
+.collection__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+.collection__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.collection__item-title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 24px;
+}
+.collection__item-price {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #998E78;
+  margin-top: 8px;
+}
+.collection__item-price s {
+  margin-right: 12px;
+}
+.collection__item-img {
+  position: relative;
+}
+.collection__item-img:hover .collection__item-img-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+.collection__item-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(110, 156, 159, 0.65);
+  transition: 0.4s ease;
+}
+.collection__item-img-overlay img {
+  width: 40px;
 }
 /*# sourceMappingURL=style.css.map */

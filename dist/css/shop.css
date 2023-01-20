@@ -1,0 +1,29 @@
+.collection {
+  padding-top: 100px;
+}
+.collection__list {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+}
+.collection__buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+.collection__button {
+  padding: 20px 65px;
+  border: 1px solid #000;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+  transition: 0.3s ease;
+}
+.collection__button:hover {
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=shop.css.map */

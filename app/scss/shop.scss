@@ -1,0 +1,26 @@
+@import "static/variables";
+@import "static/mixins";
+
+.collection{
+     padding-top: 100px;
+     &__list{
+          display: grid !important;
+          grid-template-columns: repeat(3, 1fr);
+     }
+     &__buttons{
+          @include flex(flex-start, center);
+          gap: 12px;
+          margin-bottom: 60px;
+     }
+     &__button{
+          padding: 20px 65px;
+          border: 1px solid $black;     
+          @include text(17px, 24px, 500, $black);
+          transition: 0.3s ease;
+          &:hover{
+               background: $black;
+               color: white;
+               cursor: pointer;
+          }
+     }
+}

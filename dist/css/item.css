@@ -1,0 +1,16 @@
+.item__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+}
+.item__part:first-child {
+  width: 40%;
+}
+.item__part:last-child {
+  width: 60%;
+}
+.item__img {
+  width: 100%;
+}
+/*# sourceMappingURL=item.css.map */
