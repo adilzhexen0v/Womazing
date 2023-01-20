@@ -1,0 +1,36 @@
+.brand__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.brand__list:last-child {
+  padding-top: 100px;
+  flex-direction: row-reverse;
+}
+.brand__part:first-child {
+  width: 40%;
+}
+.brand__part:last-child {
+  width: 60%;
+}
+.brand__img {
+  width: 100%;
+}
+.brand__title {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 48px;
+}
+.brand__text {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000;
+}
+.brand__text:nth-child(even) {
+  margin-bottom: 32px;
+}
+/*# sourceMappingURL=brand.css.map */

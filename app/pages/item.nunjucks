@@ -16,9 +16,7 @@
                     <div class="page__link-line"></div>
                     Свитшот Sweet Shot
                </div>
-          </div>
-          <section class="item">
-               <div class="container">
+                              <section class="item">
                     <div class="item__list">
                          <div class="item__part">
                               <img src="./img/home_collection/sweater_sweet_shot.png" alt="sweater_sweet_shot" class="item__img">
@@ -49,11 +47,9 @@
                               </form>
                          </div>
                     </div>
-               </div>
-          </section>
+               </section>
 
-          <section class="collection">
-               <div class="container">
+               <section class="collection">
                     <div class="section__title">
                          Связанные товары
                     </div>
@@ -78,8 +74,7 @@
                               <h4 class="collection__item-title">Купальник GLOW</h4>
                               <h6 class="collection__item-price">$89</h6>
                          </div>
-                    </div>
-               </div>
-          </section>
+               </section>
+          </div>
      </main>
 {% endblock %}
