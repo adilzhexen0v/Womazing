@@ -1,0 +1,48 @@
+{% extends 'layout.nunjucks' %}
+
+{% block head %}
+     <link rel="stylesheet" href="./css/contact.css">
+     <title>Контакты - Womazing</title>
+{% endblock %}
+
+{% block content %}
+         
+     <main>
+          <div class="container">
+               <div class="page__title">Контакты</div>
+               <div class="page__link">
+                    <a href="./index.html">Главная</a>
+                    <div class="page__link-line"></div>
+                    Контакты
+               </div>
+               <section class="contact">
+                    <iframe class="contact__map" src="http://maps.google.com/maps?q=55.761132,37.622328&z=18&output=embed"></iframe>
+                    <div class="contact__list">
+                         <div class="contact__item">
+                              <h4 class="contact__item-title">Телефон</h4>
+                              <h6 class="contact__item-content">+7 (495) 823-54-12</h6>
+                         </div>
+                         <div class="contact__item">
+                              <h4 class="contact__item-title">E-mail</h4>
+                              <a href="mailto:hello@womazing.com" class="contact__item-content">hello@womazing.com</a>
+                         </div>
+                         <div class="contact__item">
+                              <h4 class="contact__item-title">Адрес</h4>
+                              <h6 class="contact__item-content">г. Москва, улица Петровка, 2</h6>
+                         </div>
+                    </div>
+                    <form action="#!" class="contact__form">
+                         <h4 class="contact__form-title">Напишите нам</h4>
+                         <input type="text" class="contact__form-input" placeholder="Имя">
+                         <input type="text" class="contact__form-input" placeholder="E-mail">
+                         <input type="text" class="contact__form-input" placeholder="Телефон">
+                         <textarea class="contact__form-input" placeholder="Сообщение"></textarea>
+                         <input type="submit" value="Отправить" class="contact__form-submit btn">
+                    </form>
+                    <div class="contact__message">
+                         Сообщение успешно отправлено
+                    </div>
+               </section>
+          </div>
+     </main>
+{% endblock %}

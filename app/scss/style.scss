@@ -53,6 +53,18 @@ section{
      }
 }
 
+.btn{
+     padding: 22px 50px;
+     border: 1px solid $blue;
+     background-color: $blue !important;
+     @include text(17px, 24px, 400, white);
+     transition: 0.3s ease;
+     &:hover{
+          background-color: #fff !important; 
+          color: $blue;
+     }
+}
+
 .page{
      &__title{
           margin-top: 40px;

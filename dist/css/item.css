@@ -104,20 +104,6 @@
   color: #000;
   text-align: center;
 }
-.item__cart-btn {
-  padding: 22px 50px;
-  border: 1px solid #6E9C9F;
-  background-color: #6E9C9F !important;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 400;
-  color: white;
-  transition: 0.3s ease;
-}
-.item__cart-btn:hover {
-  background-color: #fff !important;
-  color: #6E9C9F;
-}
 
 .active-color {
   border: 1.5px solid #000;
