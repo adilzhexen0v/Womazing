@@ -74,12 +74,33 @@ window.addEventListener('DOMContentLoaded', () => {
           moveSlider(sliderOffset, sliderItemWidth);
      });
 
-     // let indexCurrentTab = 0;
-     // setInterval(() => {
-     //      showTab(indexCurrentTab);
-     //      indexCurrentTab++;
-     //      if (indexCurrentTab === tabsItems.length) {
-     //           indexCurrentTab = 0;
-     //      }
-     // }, 10000);
+     const getResource = async (url) => {
+          let res = await fetch(url);
+          if (!res.ok) {
+              throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+          }
+          return await res.json();
+     }
+
+     getResource('./db/clothes.json').then(
+          data => {
+               for (let i = 0; i < 3; i++) {
+                    const item = data.clothes[i];
+                    const alt = item.image.slice(0, -4);
+                    const card = document.createElement('div');
+                    card.classList.add('collection__item');
+                    card.innerHTML = `
+                         <a href="./item.html?id=${item.id}" class="collection__item-img">
+                              <img src="./img/home_collection/${item.image}" alt="${alt}">
+                              <div class="collection__item-img-overlay">
+                                   <img src="./img/overlay_arrow.png" alt="overlay_arrow">
+                              </div>
+                         </a>
+                         <h4 class="collection__item-title">${item.name}</h4>
+                         <h6 class="collection__item-price">$${item.price}</h6>
+                    `;
+                    document.querySelector('.collection__list').append(card);
+               }
+          }
+     );
 });

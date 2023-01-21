@@ -1,0 +1,88 @@
+{
+     "clothes": [
+          {
+               "id": 1,
+               "name": "Пальто Mango",
+               "image": "coat_mango.png",
+               "category": "Пальто",
+               "price": 349
+          },
+          {
+               "id": 2,
+               "name": "Кардиган Sailor",
+               "image": "cardigan_sailor.png",
+               "category": "Кардиганы",
+               "price": 189
+          },
+          {
+               "id": 3,
+               "name": "Платье Suara Femme",
+               "image": "dress_suara_femme.png",
+               "category": "Платья",
+               "price": 259
+          },
+          {
+               "id": 4,
+               "name": "Кардиган Brunello",
+               "image": "cardigan_brunello.png",
+               "category": "Кардиганы",
+               "price": 229
+          },
+          {
+               "id": 5,
+               "name": "Свитшот Felina",
+               "image": "sweetshot_felina.png",
+               "category": "Свитшоты",
+               "price": 309
+          },
+          {
+               "id": 6,
+               "name": "Платье Emma Dell'oro",
+               "image": "dress_emma_dell'oro.png",
+               "category": "Платья",
+               "price": 199
+          },
+          {
+               "id": 7,
+               "name": "Свитшот Pinkaboo",
+               "image": "sweetshot_pinkaboo.png",
+               "category": "Свитшоты",
+               "price": 269
+          },
+          {
+               "id": 8,
+               "name": "Пальто Vivaldi",
+               "image": "coat_vivaldi.png",
+               "category": "Пальто",
+               "price": 429
+          },
+          {
+               "id": 9,
+               "name": "Кардиган Kenzo",
+               "image": "cardigan_kenzo.png",
+               "category": "Кардиганы",
+               "price": 389
+          },
+          {
+               "id": 10,
+               "name": "Платье UNIQLO",
+               "image": "dress_uniqlo.png",
+               "category": "Платья",
+               "price": 539
+          },
+          {
+               "id": 11,
+               "name": "Свитшот Missoni",
+               "image": "sweetshot_missoni.png",
+               "category": "Свитшоты",
+               "price": 299
+          },
+          {
+               "id": 12,
+               "name": "Кардиган TWINSET",
+               "image": "cardigan_twinset.png",
+               "category": "Кардиганы",
+               "price": 359
+          }
+     ]
+}
