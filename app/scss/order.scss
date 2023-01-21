@@ -1,0 +1,152 @@
+@import "static/variables";
+@import "static/mixins";
+
+.order{
+     &__list{
+          @include flex(flex-start, flex-start);
+     }
+     &__part{
+          width: 50%;
+          &:last-child{
+               .order__title{
+                    margin-left: 18px;
+               }
+          }
+     }
+     &__title{
+          @include text(25px, 35px, 500, $black);
+          margin-bottom: 48px;
+     }
+     &__form{
+          width: 60%; 
+          &-input{
+               @include text(17px, 24px, 500, $darkenGray);
+               width: 100%;
+               border-bottom: 1px solid $black;
+               padding-bottom: 16px;
+               margin-top: 32px;
+          }
+          &-error{
+               @include text(17px, 24px, 500, $pink);
+          }
+     }
+     &__table{
+          width: 50%;
+          margin-bottom: 140px;    
+          &-row{
+               display: grid;
+               grid-template-columns: 7fr 3fr;
+               padding: 15px 18px;
+               &:first-child{
+                    .order__table-column{
+                         @include text(20px, 28px, 500, $black);
+                    }
+               }
+               &:last-child{
+                    background: $beige;
+                    .order__table-column{
+                         @include text(20px, 28px, 500, $black);
+                    }
+               }
+          }
+          &-column{
+               @include text(17px, 24px, 500, $black);
+          }
+     }
+     &__payment{
+          margin-left: 18px;
+          &-row{
+               @include flex(flex-start, center);
+               gap: 16px;
+               &:first-child{
+                    margin-bottom: 20px;
+               }
+               &-title{
+                    @include text(17px, 24px, 500, $black);
+               }
+          }
+          &-btn{
+               margin-top: 48px;
+               display: inline-block;
+          }
+     }
+     &__radio{
+          &-outer{
+               width: 22px;
+               height: 22px;
+               border: 1px solid $black;
+               @include flex(center, center);
+               transition: 0.2s ease;
+               .active{
+                    display: block;
+               }
+               &:hover{
+                    cursor: pointer;
+                    border-color: rgba($black, 0.8);
+                    .order__radio-inner{
+                         background: rgba($black, 0.8);
+                    }
+               }
+          }
+          &-inner{
+               display: none;
+               width: 10px;
+               height: 10px;
+               background: $black;
+               transition: 0.2s ease;
+          }
+     }
+}
+
+.shadow{
+     top: 0;
+     position: fixed;
+     width: 100vw;
+     height: 100vh;
+     background: rgba($black, 0.5);
+     display: none;
+     justify-content: center;
+     align-items: center;
+}
+
+.modal{
+     width: 35%;
+     border: 1px solid $gray;
+     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+     &__header{
+          padding: 16px 24px;
+          background: $beige;
+          @include flex(flex-end, center);
+          border-bottom: 1px solid $gray;
+          i{
+               transition: 0.3s ease;
+               &:hover{
+                    color: $darkGray;
+                    cursor: pointer;
+               }
+          }
+     }
+     &__body{
+          background: white;
+          padding: 36px 24px;
+          @include flex(center, center);
+          flex-direction: column;
+          gap: 20px;
+          &-block{
+               @include flex(flex-start, center);
+               gap: 40px;
+               img{
+                    width: 100px;
+               }
+               &-text{
+                    h4{
+                         @include text(25px, 35px, 500, $black);
+                         margin-bottom: 16px;
+                    }
+                    h6{
+                         @include text(17px, 24px, 500, $black);
+                    }
+               }
+          }
+     }
+}

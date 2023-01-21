@@ -43,7 +43,7 @@
                               </div>
                               <form action="#!" class="item__cart-list">
                                    <input type="text" class="item__cart-input" value="1">
-                                   <input type="submit" value="Добавить в корзину" class="item__cart-btn">
+                                   <input type="submit" value="Добавить в корзину" class="item__cart-btn btn">
                               </form>
                          </div>
                     </div>

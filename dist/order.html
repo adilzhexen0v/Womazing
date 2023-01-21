@@ -8,8 +8,9 @@
      <link rel="stylesheet" href="./css/style.css">
      <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
      
-     <link rel="stylesheet" href="./css/cart.css">
-     <title>Корзина - Womazing</title>
+     <script defer src="./js/order.js"></script>
+     <link rel="stylesheet" href="./css/order.css">
+     <title>Оформление заказа - Womazing</title>
 
 </head>
 <body>
@@ -40,69 +41,81 @@
           </nav>
      </header>
      
-<main>
+     <main>
           <div class="container">
-               <div class="page__title">Корзина</div>
+               <div class="page__title">Оформление заказа</div>
                <div class="page__link">
                     <a href="./index.html">Главная</a>
                     <div class="page__link-line"></div>
-                    Корзина
+                    <a href="./cart.html">Корзина</a>
+                    <div class="page__link-line"></div>
+                    Оформление заказа
                </div>
-               <section class="cart">
-                    <div class="cart__table">
-                         <div class="cart__row">
-                              <div class="cart__column cart__column-name">Товар</div>
-                              <div class="cart__column cart__column-price">Цена</div>
-                              <div class="cart__column cart__column-count">Количество</div>
-                              <div class="cart__column cart__column-total">Всего</div>
+               <section class="order">
+                    <div class="order__list">
+                         <div class="order__part">
+                              <form action="#!" class="order__form">
+                                   <h4 class="order__title">Данные покупателя</h4>
+                                   <input type="text" class="order__form-input" placeholder="Имя">
+                                   <input type="text" class="order__form-input" placeholder="E-mail">
+                                   <input type="text" class="order__form-input" placeholder="Телефон">
+                              </form>
                          </div>
-                         <div class="cart__row">
-                              <div class="cart__column cart__column-name">
-                                   <div class="cart__product-close">
-                                        <i class="fa fa-times"></i>
+                         <div class="order__part">
+                              <h4 class="order__title">Ваш заказ</h4>
+                              <div class="order__table">
+                                   <div class="order__table-row">
+                                        <div class="order__table-column">Товар</div>
+                                        <div class="order__table-column">Всего</div>
                                    </div>
-                                   <div class="cart__product-img">
-                                        <img src="./img/home_collection/sweater_sweet_shot.png" alt="sweater_sweet_shot">
+                                   <div class="order__table-row">
+                                        <div class="order__table-column">Футболка USA</div>
+                                        <div class="order__table-column">129$</div>
                                    </div>
-                                   <div class="cart__product-name">
-                                        Футболка USA
+                                   <div class="order__table-row">
+                                        <div class="order__table-column">Купальник GLOW</div>
+                                        <div class="order__table-column">159$</div>
                                    </div>
-                              </div>
-                              <div class="cart__column cart__column-price">129$</div>
-                              <div class="cart__column cart__column-count">
-                                   <div class="cart__product-btn">-</div>
-                                   <div class="cart__product-count">2</div>
-                                   <div class="cart__product-btn">+</div>
-                              </div>
-                              <div class="cart__column cart__column-total">258$</div>
-                         </div>
-                         <div class="cart__row">
-                              <div class="cart__column cart__column-name">
-                                   <div class="cart__product-close">
-                                        <i class="fa fa-times"></i>
-                                   </div>
-                                   <div class="cart__product-img">
-                                        <img src="./img/home_collection/sweater_sweet_shot.png" alt="sweater_sweet_shot">
-                                   </div>
-                                   <div class="cart__product-name">
-                                        Футболка USA
+                                   <div class="order__table-row">
+                                        <div class="order__table-column">Итого</div>
+                                        <div class="order__table-column">278$</div>
                                    </div>
                               </div>
-                              <div class="cart__column cart__column-price">129$</div>
-                              <div class="cart__column cart__column-count">
-                                   <div class="cart__product-btn">-</div>
-                                   <div class="cart__product-count">2</div>
-                                   <div class="cart__product-btn">+</div>
-                              </div>
-                              <div class="cart__column cart__column-total">258$</div>
                          </div>
                     </div>
-                    <div class="cart__buy">
-                         <div class="cart__buy-price">
-                              Итого:
-                              <span>258$</span>
+                    <div class="order__list">
+                         <div class="order__part">
+                              <form action="#!" class="order__form">
+                                   <h4 class="order__title">Адрес покупателя</h4>
+                                   <input type="text" class="order__form-input" placeholder="Страна">
+                                   <input type="text" class="order__form-input" placeholder="Город">
+                                   <input type="text" class="order__form-input" placeholder="Улица">
+                                   <input type="text" class="order__form-input" placeholder="Дом">
+                                   <input type="text" class="order__form-input" placeholder="Квартира">
+                              </form>
                          </div>
-                         <a href="./order.html" class="cart__buy-btn btn">Оформить заказ</a>
+                         <div class="order__part">
+                              <h4 class="order__title">Способы оплаты</h4>
+                              <div class="order__payment">
+                                   <div class="order__payment-row">
+                                        <div class="order__radio-outer">
+                                             <div class="order__radio-inner active"></div>
+                                        </div>
+                                        <div class="order__payment-row-title">
+                                             Оплата наличными
+                                        </div>
+                                   </div>
+                                   <div class="order__payment-row">
+                                        <div class="order__radio-outer">
+                                             <div class="order__radio-inner"></div>
+                                        </div>
+                                        <div class="order__payment-row-title">
+                                             Оплата картой   
+                                        </div>
+                                   </div>
+                                   <div class="order__payment-btn btn">Разместить заказ</div>
+                              </div>
+                         </div>
                     </div>
                </section>
           </div>

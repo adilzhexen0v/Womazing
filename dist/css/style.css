@@ -72,6 +72,7 @@ section:last-child {
 .btn:hover {
   background-color: #fff !important;
   color: #6E9C9F;
+  cursor: pointer;
 }
 
 .page__title {
