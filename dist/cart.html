@@ -8,8 +8,8 @@
      <link rel="stylesheet" href="./css/style.css">
      <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
      
-     <link rel="stylesheet" href="./css/contact.css">
-     <title>Контакты - Womazing</title>
+     <link rel="stylesheet" href="./css/cart.css">
+     <title>Корзина - Womazing</title>
 
 </head>
 <body>
@@ -32,9 +32,9 @@
                               <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
                               +7 (495) 823-54-12
                          </div>
-                         <a href="./cart.html" class="cart">
+                         <div class="cart">
                               <img src="./img/cart.png" alt="cart">
-                         </a>
+                         </div>
                     </div>
                </div>
           </nav>
@@ -44,38 +44,67 @@
          
      <main>
           <div class="container">
-               <div class="page__title">Контакты</div>
+               <div class="page__title">Корзина</div>
                <div class="page__link">
                     <a href="./index.html">Главная</a>
                     <div class="page__link-line"></div>
-                    Контакты
+                    Корзина
                </div>
-               <section class="contact">
-                    <iframe class="contact__map" src="http://maps.google.com/maps?q=55.761132,37.622328&z=18&output=embed"></iframe>
-                    <div class="contact__list">
-                         <div class="contact__item">
-                              <h4 class="contact__item-title">Телефон</h4>
-                              <h6 class="contact__item-content">+7 (495) 823-54-12</h6>
+               <section class="cart">
+                    <div class="cart__table">
+                         <div class="cart__row">
+                              <div class="cart__column cart__column-name">Товар</div>
+                              <div class="cart__column cart__column-price">Цена</div>
+                              <div class="cart__column cart__column-count">Количество</div>
+                              <div class="cart__column cart__column-total">Всего</div>
                          </div>
-                         <div class="contact__item">
-                              <h4 class="contact__item-title">E-mail</h4>
-                              <a href="mailto:hello@womazing.com" class="contact__item-content">hello@womazing.com</a>
+                         <div class="cart__row">
+                              <div class="cart__column cart__column-name">
+                                   <div class="cart__product-close">
+                                        <i class="fa fa-times"></i>
+                                   </div>
+                                   <div class="cart__product-img">
+                                        <img src="./img/home_collection/sweater_sweet_shot.png" alt="sweater_sweet_shot">
+                                   </div>
+                                   <div class="cart__product-name">
+                                        Футболка USA
+                                   </div>
+                              </div>
+                              <div class="cart__column cart__column-price">129$</div>
+                              <div class="cart__column cart__column-count">
+                                   <div class="cart__product-btn">-</div>
+                                   <div class="cart__product-count">2</div>
+                                   <div class="cart__product-btn">+</div>
+                              </div>
+                              <div class="cart__column cart__column-total">258$</div>
                          </div>
-                         <div class="contact__item">
-                              <h4 class="contact__item-title">Адрес</h4>
-                              <h6 class="contact__item-content">г. Москва, улица Петровка, 2</h6>
+                         <div class="cart__row">
+                              <div class="cart__column cart__column-name">
+                                   <div class="cart__product-close">
+                                        <i class="fa fa-times"></i>
+                                   </div>
+                                   <div class="cart__product-img">
+                                        <img src="./img/home_collection/sweater_sweet_shot.png" alt="sweater_sweet_shot">
+                                   </div>
+                                   <div class="cart__product-name">
+                                        Футболка USA
+                                   </div>
+                              </div>
+                              <div class="cart__column cart__column-price">129$</div>
+                              <div class="cart__column cart__column-count">
+                                   <div class="cart__product-btn">-</div>
+                                   <div class="cart__product-count">2</div>
+                                   <div class="cart__product-btn">+</div>
+                              </div>
+                              <div class="cart__column cart__column-total">258$</div>
                          </div>
                     </div>
-                    <form action="#!" class="contact__form">
-                         <h4 class="contact__form-title">Напишите нам</h4>
-                         <input type="text" class="contact__form-input" placeholder="Имя">
-                         <input type="text" class="contact__form-input" placeholder="E-mail">
-                         <input type="text" class="contact__form-input" placeholder="Телефон">
-                         <textarea class="contact__form-input" placeholder="Сообщение"></textarea>
-                         <input type="submit" value="Отправить" class="contact__form-submit btn">
-                    </form>
-                    <div class="contact__message">
-                         Сообщение успешно отправлено
+                    <div class="cart__buy">
+                         <div class="cart__buy-price">
+                              Итого:
+                              <span>258$</span>
+                         </div>
+                         <a href="#!" class="cart__buy-btn btn">Оформить заказ</a>
                     </div>
                </section>
           </div>

@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
           })
      });
      showTab(0);
-
      const sliderContainer = document.querySelector('.team__slider-container');
      const sliderItems = document.querySelectorAll('.team__slider-item');
      const sliderDots = document.querySelectorAll('.team__slider-dot');
