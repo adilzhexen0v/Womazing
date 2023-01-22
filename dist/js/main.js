@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     card.classList.add('collection__item');
                     card.innerHTML = `
                          <a href="./item.html?id=${item.id}" class="collection__item-img">
-                              <img src="./img/home_collection/${item.image}" alt="${alt}">
+                              <img src="./img/collection/${item.image}" alt="${alt}">
                               <div class="collection__item-img-overlay">
                                    <img src="./img/overlay_arrow.png" alt="overlay_arrow">
                               </div>

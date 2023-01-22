@@ -56,5 +56,25 @@
                     <div class="collection__grid"></div>
                </section>
           </div>
+          <div class="shadow">
+               <div class="modal">
+                    <div class="modal__header">
+                         <i class="fa fa-times modal__close"></i>
+                    </div>
+                    <div class="modal__body">
+                         <div class="modal__body-block">
+                              <img src="./img/success.png" alt="">
+                              <div class="modal__body-block-text">
+                                   <h4>Товар добавлен в корзину</h4>
+                                   <h6>...</h6>
+                              </div>
+                         </div>
+                         <div class="modal__body-btns">
+                              <div class="modal__body-btn btn__inverse modal__close">Закрыть</div>
+                              <a href="./cart.html" class="modal__body-btn btn">В корзину</a>
+                         </div>                         
+                    </div>
+               </div>
+          </div>
      </main>
 {% endblock %}
