@@ -2,16 +2,18 @@
 @import "static/mixins";
 
 .cart{
+     .first__row{
+          .cart__row{
+               padding-bottom: 24px;
+          }
+          .cart__column{
+               @include text(20px, 28px, 500, $black);
+          }
+     }
      &__row{
           display: grid;
           grid-template-columns: 5fr 2fr 3fr 2fr;
           border-bottom: 1px solid #ccc;
-          &:first-child{
-               padding-bottom: 24px;
-               .cart__column{
-                    @include text(20px, 28px, 500, $black);
-               }
-          }
           &:last-child{
                border: 0;
           }

@@ -1,6 +1,7 @@
 {% extends 'layout.nunjucks' %}
 
 {% block head %}
+     <script defer src="./js/cart.js"></script>
      <link rel="stylesheet" href="./css/cart.css">
      <title>Корзина - Womazing</title>
 {% endblock %}
@@ -16,57 +17,18 @@
                </div>
                <section class="cart">
                     <div class="cart__table">
-                         <div class="cart__row">
+                         <div class="cart__row first__row">
                               <div class="cart__column cart__column-name">Товар</div>
                               <div class="cart__column cart__column-price">Цена</div>
                               <div class="cart__column cart__column-count">Количество</div>
                               <div class="cart__column cart__column-total">Всего</div>
                          </div>
-                         <div class="cart__row">
-                              <div class="cart__column cart__column-name">
-                                   <div class="cart__product-close">
-                                        <i class="fa fa-times"></i>
-                                   </div>
-                                   <div class="cart__product-img">
-                                        <img src="./img/home_collection/sweater_sweet_shot.png" alt="sweater_sweet_shot">
-                                   </div>
-                                   <div class="cart__product-name">
-                                        Футболка USA
-                                   </div>
-                              </div>
-                              <div class="cart__column cart__column-price">129$</div>
-                              <div class="cart__column cart__column-count">
-                                   <div class="cart__product-btn">-</div>
-                                   <div class="cart__product-count">2</div>
-                                   <div class="cart__product-btn">+</div>
-                              </div>
-                              <div class="cart__column cart__column-total">258$</div>
-                         </div>
-                         <div class="cart__row">
-                              <div class="cart__column cart__column-name">
-                                   <div class="cart__product-close">
-                                        <i class="fa fa-times"></i>
-                                   </div>
-                                   <div class="cart__product-img">
-                                        <img src="./img/home_collection/sweater_sweet_shot.png" alt="sweater_sweet_shot">
-                                   </div>
-                                   <div class="cart__product-name">
-                                        Футболка USA
-                                   </div>
-                              </div>
-                              <div class="cart__column cart__column-price">129$</div>
-                              <div class="cart__column cart__column-count">
-                                   <div class="cart__product-btn">-</div>
-                                   <div class="cart__product-count">2</div>
-                                   <div class="cart__product-btn">+</div>
-                              </div>
-                              <div class="cart__column cart__column-total">258$</div>
-                         </div>
+                         <div class="cart__table-products"></div>
                     </div>
                     <div class="cart__buy">
                          <div class="cart__buy-price">
                               Итого:
-                              <span>258$</span>
+                              <span></span>
                          </div>
                          <a href="./order.html" class="cart__buy-btn btn">Оформить заказ</a>
                     </div>

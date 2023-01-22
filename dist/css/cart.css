@@ -1,16 +1,16 @@
-.cart__row {
-  display: grid;
-  grid-template-columns: 5fr 2fr 3fr 2fr;
-  border-bottom: 1px solid #ccc;
-}
-.cart__row:first-child {
+.cart .first__row .cart__row {
   padding-bottom: 24px;
 }
-.cart__row:first-child .cart__column {
+.cart .first__row .cart__column {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
   color: #000;
+}
+.cart__row {
+  display: grid;
+  grid-template-columns: 5fr 2fr 3fr 2fr;
+  border-bottom: 1px solid #ccc;
 }
 .cart__row:last-child {
   border: 0;
